@@ -6,7 +6,9 @@ struct account {
     char name[50];
     int mobileNumber; 
     int pin;
+    int accountNumber;
     float balance;
+    
 };
 
 void welcomeScreen() {
@@ -17,6 +19,8 @@ void welcomeScreen() {
     printf("Enter your choice: ");
 
 }
+
+
 void createAccount() {
     struct account accounts;
     FILE *file;
@@ -53,7 +57,34 @@ void createAccount() {
 }
 
 void login() {
-    printf("Login selected\n");
+    struct account accounts;
+    int choice;
+    char admin_name[] = {'M', 'a', 'r', 'i', 'e', '_', 'l', 'o', 'i', 's'};
+    int admin_pin = 6615;
+
+    printf("1. Login as User: \n");
+    printf("2. Login as an Adim: \n");
+    printf("Enter choice: \n");
+    scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+        printf("Enter account number: \n");
+        scanf("%d", &accounts.accountNumber);
+        printf("Enter pin: \n");
+        scanf("%d", &accounts.pin);
+        break;
+    case 2:
+        printf("Enter admin name: \n");
+        scanf("%s", &admin_name);
+        printf("Enter admin pin: \n");
+        scanf("%d", &admin_pin);
+        break;
+    default:
+        printf("Invalid choice");
+        break;
+    }
+    
 }
 void customerSupport() {
     printf("Custumer support selected\n");
