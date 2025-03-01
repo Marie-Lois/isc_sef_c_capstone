@@ -84,8 +84,31 @@ void login() {
         printf("Invalid choice");
         break;
     }
-    
+
+
 }
+void adminSection() {
+    char admin_name = "Marie_Lois";
+    int admin_pin = 6615;
+    int choice;
+    if(admin_name == "Marie_lois" && admin_pin == 6615) {
+        printf("Admin Section\n");
+        printf("1. View User Infomormation\n");
+        printf("2. Delete User account\n");
+        printf("\nEnter choice: ");
+        scanf("%d", &choice);
+        switch (choice)
+        {
+        case 1:
+            
+            break;
+        
+        default:
+            break;
+        }
+
+    }
+}    
 void customerSupport() {
     printf("Custumer support selected\n");
 }
@@ -108,6 +131,18 @@ int main() {
         break;
     default:
     printf("Invalid choice. Please try again.\n");
+        break;
+    }
+    adminSection();
+    int choice;
+    scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+        
+        break;
+    
+    default:
         break;
     }
 
