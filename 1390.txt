@@ -1,5 +1,0 @@
-Account Number: 1390
-Account Name: Acha
-Mobile Number: 0
-PIN: 1157543096
-0.00

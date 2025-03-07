@@ -1,5 +1,0 @@
-Account Number: 1554
-Account Name: Acha
-Mobile Number: 0
-PIN: 1389358888
-0.00
