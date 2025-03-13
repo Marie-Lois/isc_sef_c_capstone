@@ -169,7 +169,6 @@ void login()
         bool found = false;
 
         while (fscanf(file, "%d,%49[^,],%d,%d,%f\n", &accounts.accountNumber, accounts.name, &accounts.mobileNumber, &accounts.pin, &accounts.balance) != EOF)
-            ;
         {
             printf("\n%d", accounts.accountNumber);
             if (input_accountnumber == accounts.accountNumber && input_accountpin == accounts.pin)
